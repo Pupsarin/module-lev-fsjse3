@@ -458,12 +458,16 @@ hr {
 .in-field {
 	margin: 0.3rem 0;
 	padding: 0.75rem;
+	border: 1px solid #000;
+	outline: none;
+	box-shadow: none;
 }
 
 .in-field.text-area {
 	height: 10rem;
 	color: #000;
-  resize: none;
+	resize: none;
+	font-family: inherit;
 }
 
 .contact-form>.blue-button {
@@ -486,6 +490,10 @@ hr {
 	max-width: 45%;
 }
 
+footer {
+	background: url(../images/bg-contact.png) no-repeat center;
+	background-size: cover;
+}
 
 
 
