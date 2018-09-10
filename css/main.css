@@ -331,6 +331,10 @@ hr {
 	color: #413d4b;
 }
 
+.our-works-sect {
+	padding-bottom: 3rem;
+}
+
 
 .right-arrow {
 	border: solid #413d4b;
@@ -357,12 +361,73 @@ hr {
 	max-width: 50%;
 }
 
+.testimonial-sect {
+	background: url(../images/bg-contact.png) no-repeat center;
+	background-size: cover;
+	text-align: center;
+	padding: 2rem 0;
+}
+
+.quotes {
+	font-size: 100px;
+	font-family: PlayfairDisplay-Regular;
+	margin-top: 0;
+	height: 0;
+}
+
+.quotation {
+	margin: 0;
+	color: #f9f9f9b4;
+}
+
+.who-is-who {
+	text-transform: uppercase;
+	margin-top: 1rem;
+	line-height: 1rem;
+}
+
+.who-is-who>h3, .who-is-who>p  {
+	margin: 0.3rem 0;
+	color: #f9f9f9e1;
+}
+
+.who-is-who>p {
+	font-size: 0.75rem;
+}
 
 
 
+.carousel {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin-top: 1rem;
+}
 
+.persons {
+	display: block;
+	margin: 5px;
+	width: 15%;
+	max-width: 15%;
+}
 
+.persons.active-img {
+	width: 5rem;
+	max-width: 5rem;
+}
 
+.persons-img {
+	width: 100%;
+}
+
+.carousel>.right-arrow {
+	transform: scale(2.0) rotate(-45deg);
+}
+
+.carousel>.right-arrow.lefty {
+	transform: scale(2.0) rotate(135deg);
+}
 
 
 @media (min-width: 768px) {
