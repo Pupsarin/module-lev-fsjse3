@@ -15,7 +15,6 @@
 
 body {
 	font: 400 16px/1.1 'Roboto', 'Arial', 'Helvetica', sans-serif;
-	/* background: #f0f0f5; */
 	background: #fff;
 	color: #000;
 	margin: 0;
@@ -598,11 +597,56 @@ footer>.content>* {
 	font-size: 0.7rem; 
 }
 
+
+/* -------------------------------------------------------------------------------------- */
+/* -----------------------------MEDIA-TABLET--------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
+
 @media (min-width: 768px) {
 	body {
 		background: #2f274c;	
 	}
+
+	.logo {
+		width: 10%;
+	}
+
+	.fas.fa-align-justify {
+		display: none;
+	}
+
+	nav {
+		width: 80%;
+		margin: auto 0;
+	}
+
+	.main-nav {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+		justify-content: flex-end;
+		align-content: center;
+	}
+
+	.main-nav>li {
+		margin-left: 1rem;
+	}
+
+	.inner-main-banner {
+		padding: 0 60px;
+	}
+
 }
 
+/* -------------------------------------------------------------------------------------- */
+/* -----------------------------MEDIA-DESKTOP-------------------------------------------- */
+/* -------------------------------------------------------------------------------------- */
 
+@media(min-width: 1024px) {
+	body {
+		background: red;
+	}
+
+
+}
 
