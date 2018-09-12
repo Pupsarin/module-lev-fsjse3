@@ -236,6 +236,11 @@ nav {
 	color: #2f2d35;
 }
 
+.card {
+	border-bottom: 2px solid #00000011;
+	margin: 2rem 0;
+}
+
 .card>a {
 	display: block;
 }
@@ -267,13 +272,6 @@ nav {
 	z-index: 1;
 }
 
-hr {
-	border: 0;
-	height: 1px;
-	background-image: linear-gradient(to right, #ccc, #333, #ccc);
-	margin: 2rem 0;	
-}
-
 .team-sect {
 	background: url(../images/section2-bg.png) no-repeat center;
 	background-size: cover;
@@ -302,6 +300,8 @@ hr {
 
 .employee-card>a {
 	display: block;
+	border: 1px solid #ffffff6c;
+	margin: 2.5rem auto 2rem;
 }
 
 .employee-card>a>img {
@@ -309,19 +309,18 @@ hr {
 	max-width: 100%;
 }
 
+.photo-label {
+	padding: 1rem;
+	line-height: 0.5rem;
+}
+
+.photo-label>p {
+	opacity: 0.5;
+}
+
 .employees-sect-bottom {
 	text-transform: initial;
 	margin-bottom: 3rem;
-}
-
-.employee-card::after {
-	content: "";
-	display: block;
-	margin: 2.5rem auto 2rem;
-	height: 2px;
-	background-color: #f9f9f9;
-	opacity: 0.302;
-	z-index: 1;
 }
 
 .our-works {
@@ -604,7 +603,7 @@ footer>.content>* {
 
 @media (min-width: 768px) {
 	body {
-		background: #2f274c;	
+		/* background: gray;	 */
 	}
 
 	.logo {
@@ -634,6 +633,83 @@ footer>.content>* {
 
 	.inner-main-banner {
 		padding: 0 60px;
+	}
+
+	.our-story-sect>.content {
+		display: flex;
+		flex-direction: row;
+		align-items: center;
+		justify-content: space-between;
+		
+	}
+
+	.our-story-logo-img {
+		max-width: 40%;
+		width: 40%;
+		padding: 2.5rem;
+	}
+
+	.our-story {
+		margin: 1rem 0;
+	}
+
+	.our-story.wrap-col {
+		align-items: flex-start;
+	}
+	
+	.our-story>p {
+		margin: 0 0 1rem;
+	}
+
+	.our-story>a {
+		margin: 1rem 0;
+	}
+
+	.section-body {
+		display: flex;
+		flex-direction: row;
+		flex-wrap: wrap;
+	} 
+
+	.card {
+		width: 50%;
+		margin: 0;
+		padding: 2rem 0;
+	}
+
+	.card+hr{
+		display: none;
+	}
+	
+	.card:nth-child(odd) {
+		border-bottom: 1px solid;
+		border-right: none;
+		border-top: none;
+		border-left: none;
+		border-color: #00000010;
+	}
+
+	.card:nth-child(even) {
+		border-left: 1px solid;
+		border-bottom: 1px solid;
+		border-top: none;
+		border-right: none;
+		border-color: #00000010;
+	}	
+
+	.card:nth-child(5), .card:nth-child(6) {
+		border-bottom: none;
+	}
+
+	.employee-card {
+		width: calc(50% - 0.5rem);
+	}
+
+	.employee-cards.wrap-col {
+		align-items: flex-start;
+		flex-wrap: wrap; 
+		flex-direction: row;
+		justify-content: space-between;
 	}
 
 }
