@@ -707,12 +707,54 @@ footer>.content>* {
 		width: calc(50% - 0.5rem);
 	}
 
-	.employee-cards.wrap-col {
-		align-items: flex-start;
+	.employee-cards.wrap-col, .contact-form-sect>.content,
+	.footer-info-wrap, .footer-menu-copyrights, .bottom-nav>ul {
+		display: flex;
+		align-items: center;
 		flex-wrap: wrap; 
 		flex-direction: row;
 		justify-content: space-between;
 	}
+
+	.img-item {
+		display: block;
+		width: 25%;
+		max-width: 25%;
+	}
+
+	.quotation {
+		padding: 0 60px;
+	}
+
+	.contact-form-wrap, .our-clients-wrap {
+		width: calc(50% - 1.5rem);
+	}
+
+	.contact-form>.blue-button {
+		margin: 1rem auto 0 0;
+	}
+
+	.footer-info-wrap>div {
+		width: calc(33% - 1rem);
+	}
+	
+	.social-media>li>a {
+		padding: 15px;
+		margin: 0.5rem 0.3rem 0 0;
+	}
+
+	.email-form>input {
+		font-size: 0.7rem;
+	}
+	
+	.bottom-nav {
+		width: 50%;
+	}
+
+	.bottom-nav>ul {
+	
+	}
+
 
 }
 
