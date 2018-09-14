@@ -761,9 +761,6 @@ footer>.content>* {
 /* -------------------------------------------------------------------------------------- */
 
 @media (min-width: 768px) {
-	.logo {
-		width: 20%;
-	}
 	.fas.fa-align-justify {
 		display: none;
 	}
