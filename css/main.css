@@ -14,7 +14,7 @@ font-family: 'Hammersmith One', sans-serif */
 	box-sizing: border-box;
 }
 
-input, #email_sub {
+input, textarea, #email_sub {
 	-webkit-appearance: none; 
 	-webkit-border-radius:0; 
 	border-radius: 0; 
