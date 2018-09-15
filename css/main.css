@@ -5,13 +5,12 @@
 	src: url("../fonts/fa-solid-900.woff2") format('woff2'), url("../fonts/fa-solid-900.woff") format('woff')
 }
 
-/* font-family: 'Roboto', sans-serif;
-font-family: 'Playfair Display', serif;
-font-family: 'Hammersmith One', sans-serif */
-
 * {
 	-webkit-box-sizing: border-box;
 	box-sizing: border-box;
+	-webkit-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
 }
 
 input, textarea, #email_sub {
@@ -286,7 +285,11 @@ nav {
 .video-sect {
 	background: url(../images/section1-bg.png) no-repeat center;
 	background-size: cover;
-	padding: 10rem;
+	/* padding: 10rem; */
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	height: 20rem;
 }
 
 .video.wrap-col {
@@ -295,7 +298,7 @@ nav {
 	justify-content: center;
 }
 
-.video.wrap-col>img {
+.video.wrap-col>a>img {
 	width: 100px;
 	-webkit-transition: all 0.2s ease-in-out;
 	-o-transition: all 0.2s ease-in-out;
@@ -305,13 +308,13 @@ nav {
 
 .video.wrap-col>h2 {
 	text-transform: uppercase;
-	font-size: 1.1rem;
-	margin-top: 2rem;
+	font-size: 0.8rem;
+	margin-top: 1rem;
 	font-family: inherit;
 	font-weight: 900;
 }
 
-.video.wrap-col>img:hover {
+.video.wrap-col>a>img:hover {
 	-webkit-transform: scale(1.1);
 	-ms-transform: scale(1.1);
 	transform: scale(1.1);
@@ -644,10 +647,17 @@ nav {
 	align-items: center;
 }
 
-.brand-logos>img {
+.brand-logos>a {
 	display: block;
-	width: 45%;
-	max-width: 45%;
+	width: 35%;
+	max-width: 35%;
+	margin: 0 0.5rem 0.5rem;
+}
+
+.brand-logos>a>img {
+	display: block;
+	width: 100%;
+	max-width: 100%;
 }
 
 footer {
@@ -721,7 +731,6 @@ footer>.content>* {
 	background-color: transparent;
 	border-color: rgba(255, 255, 255, 0.533);
 	border-top: 1px solid;
-	;
 	border-right: none;
 	border-bottom: 1px solid;
 	border-left: none;
@@ -729,6 +738,9 @@ footer>.content>* {
 	outline: none;
 	text-align: center;
 }
+.email-form>input:focus {
+	background-color: rgba(255, 255, 255, 0.05);
+} 
 
 .email-form>button {
 	font-family: "Font Awesome 5 Solid";
@@ -737,6 +749,14 @@ footer>.content>* {
 	border: 1px rgba(255, 255, 255, 0.329) solid;
 	outline: none;
 	width: 4.5rem;
+}
+
+.email-form>button:hover {
+	background-color: rgba(255, 255, 255, 0.3);
+}
+
+.email-form>button:active {
+	background-color: rgba(0, 0, 0, 0.1);
 }
 
 .social-media {
