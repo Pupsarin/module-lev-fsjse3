@@ -62,6 +62,10 @@ p {
 	color: rgb(255, 255, 255);
 }
 
+button {
+	cursor: pointer;
+}
+
 ul {
 	list-style: none;
 	margin: 0;
@@ -285,11 +289,10 @@ nav {
 .video-sect {
 	background: url(../images/section1-bg.png) no-repeat center;
 	background-size: cover;
-	/* padding: 10rem; */
 	display: flex;
 	justify-content: center;
 	flex-wrap: wrap;
-	height: 20rem;
+	height: 25rem;
 }
 
 .video.wrap-col {
@@ -520,6 +523,7 @@ nav {
 	text-transform: uppercase;
 	margin-top: 1rem;
 	line-height: 1rem;
+	font-style: normal;   
 }
 
 .who-is-who>h3,
